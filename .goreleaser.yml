@@ -1,0 +1,13 @@
+# .goreleaser.yml
+builds:
+  - main: main.go
+    binary: nc-hammer
+    goos:
+      - windows
+      - darwin
+      - linux
+    goarch:
+      - amd64
+# Archive customization
+archive:
+  format: tar.gz
